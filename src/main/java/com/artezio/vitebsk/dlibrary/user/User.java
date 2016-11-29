@@ -3,6 +3,7 @@ package com.artezio.vitebsk.dlibrary.user;
 import com.artezio.vitebsk.dlibrary.item.Item;
 
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by pskrebnev on 29.11.2016.
@@ -48,13 +49,6 @@ public class User {
     }
 
     /**
-     * Change Item Type.
-     */
-    public void changeItemType(int itemID) {
-        //TODO
-    }
-
-    /**
      * Hold/Reserve Item. It stops Item from the any actions from other users.
      * In case you reserve Item but not take it on your hands.
      */
@@ -77,12 +71,47 @@ public class User {
     }
 
     /**
+     * Allows to keep line for particular book.
+     */
+    public void keepLineItem(int itemID) {
+        //TODO
+    }
+
+    /**
+     * Perform searching by Name of Item
+     * @param s
+     */
+    public void searchItemByName(String s) {
+        //TODO
+    }
+
+    /**
+     * Perform searching by Author of Item
+     */
+    public void searchItemByAuthor(String s) {
+        //TODO
+    }
+
+    /**
+     * Perform searching by Topics of Item
+     */
+    public void searchItemByTopics(List<String> ls) {
+        //TODO
+    }
+
+    /**
+     * Perform searching by ISBN10 or ISBN13 of Item
+     */
+    public void searchItemByIsbn(String s) {
+        //TODO
+    }
+
+    /**
      * Log all transformations to the DB
      */
     private void itemLogHistory(int itemID) {
         //TODO
     }
-
 
     /**
      * Describes the Role
