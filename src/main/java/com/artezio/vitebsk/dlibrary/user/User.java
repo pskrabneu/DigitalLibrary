@@ -2,6 +2,7 @@ package com.artezio.vitebsk.dlibrary.user;
 
 import com.artezio.vitebsk.dlibrary.item.Item;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -81,8 +82,9 @@ public class User {
      * Perform searching by Name of Item
      * @param s
      */
-    public void searchItemByName(String s) {
+    public ArrayList<Item> searchItemByName(String s) {
         //TODO
+        return null;
     }
 
     /**
@@ -95,15 +97,17 @@ public class User {
     /**
      * Perform searching by Topics of Item
      */
-    public void searchItemByTopics(List<String> ls) {
+    public ArrayList<Item> searchItemByTopics(List<String> ls) {
         //TODO
+        return null;
     }
 
     /**
      * Perform searching by ISBN10 or ISBN13 of Item
      */
-    public void searchItemByIsbn(String s) {
+    public ArrayList<Item> searchItemByIsbn(String s) {
         //TODO
+        return null;
     }
 
     /**
@@ -116,9 +120,8 @@ public class User {
     /**
      * Describes the Role
      */
-    class Role {
-        private int roleID;
-        private Boolean rightValid;
-        private String roleName;
+    public enum Role {
+        ADMIN,
+        USER
     }
 }

@@ -11,18 +11,18 @@ public class Item {
     /**
      * Describe the Ref book of possible States of the Item (Available, Borrowed, Transition etc.)
      */
-    class ItemStates {
-        int itemStateID;
-        String itemStateName;
-
+    public enum ItemStates {
+        AVAILABLE,
+        BORROWED,
+        TRANSITION;
     }
 
     /**
      * Describes the Ref book of the Types (Book, eBook, etc.)
      */
-    class ItemTypes {
-        int itemTypeID;
-        String itemTypeName;
+    public enum ItemTypes {
+        BOOK,
+        EBOOK;
     }
 
     /**
